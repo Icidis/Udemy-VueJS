@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>76-VueJS-Lifecycle-in-practice</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <button v-on:click="title = 'Text Changed'">Update Text</button>
+        <button v-on:click="destroy">Destroy</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

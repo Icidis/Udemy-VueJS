@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>65-Multi-instance-access</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+    </div>
+    <div id="app2">
+        <h1>{{ title }}</h1>
+        <button v-on:click="changeInstanceOneTitle">Change title of Instance 1</button>
+    </div>
+    <script src="app.js"></script>
+    <script>
+        // Can access VueJS data from normal Javascript
+        setTimeout(function() {
+            vm2.title = "Changed from plain javascript";
+        }, 2000)
+    </script>
+</body>
+
+</html>

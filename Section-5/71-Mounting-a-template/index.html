@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>71-Mounting-a-template</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <!-- Using the VueJS ref keyword allows VueJS to reference the
+        button element-->
+        <button v-on:click="changeButtonTitle" ref="btnShow">Change button text</button>
+    </div>
+    <div id="app2">
+        
+    </div>
+    <script>
+        var jsTitleFromPage = "This is text/data used by VueJS from a plain javascript variable";
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
