@@ -16,7 +16,7 @@ export default {
     created() {
         myEventBus.$on('ageWasEdited', (data) => {
             this.userAge = data;
-        })
+        });
     },
 
     props: {
